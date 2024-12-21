@@ -30,7 +30,7 @@ let package = Package(
     targets: [
         .target(
             name: "<your-target-name>",
-            dependencies: ["ScreenSettings"]),
+            dependencies: ["SettingsScreen"]),
     ]
 )
 ```
