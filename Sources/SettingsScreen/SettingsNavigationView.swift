@@ -37,9 +37,10 @@ public struct SettingsNavigationView: View {
             )
         case let .url(settingsType):
             SettingsLink(title: settingsType.title, url: settingsType.url, imageType: settingsType.imageType)
-        case .colorTheme:
+        case let .colorTheme(imageType):
             SettingsNavigationLink(
-                title: settingsType.title
+                title: settingsType.title,
+                imageType: imageType
             ) {
                 ColorThemeView()
             }
